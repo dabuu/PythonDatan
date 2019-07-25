@@ -47,6 +47,11 @@ def main(pre_cost):
     pre_y = model.predict(new_x)    # 模型计算预期销售额
     print "pre_y: %s" % repr(pre_y)
 
+"""
+通过散点图初步判断线性回归是比较好的拟合模型，此时应思
+考，是否有其他回归方法会得到更好的效果，例如广义线性回归、
+SVR（SVM中的回归）、CART（分类回归树）等？
+"""
 
 if __name__ == '__main__':
     main(84610)
